@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Yelp Restaurant Finder</title>
-    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <title>Golang Yelp API Demo</title>
+    <link rel="stylesheet" href="/assets/styles.css" />
   </head>
   <body>
     <h1>Find a Restaurant Here</h1>
@@ -26,7 +26,6 @@
       />
       <input type="submit" value="Submit" />
     </form>
-
     {{ range .Businesses }}
     <div class="restaurantCard">
       <img src="{{.ImageURL}}" />
@@ -36,9 +35,8 @@
         <p>Review Count: {{ .ReviewCount }}</p>
         <p>Price: {{ .Price }}</p>
       </a>
-      
     </div>
-    {{ end }}
 
+    {{ end }}
   </body>
 </html>
